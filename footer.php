@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>SSS Footer</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Correct font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
 :root {
   --gold: #d4a53b;
@@ -112,10 +102,6 @@ body {
   font-weight: 500;
 }
 </style>
-</head>
-
-<body>
-
 <footer class="sss-footer">
 
   <div class="sss-gold-line"></div>
@@ -135,11 +121,11 @@ body {
     <div>
       <h3>Quick Links</h3>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Company</a></li>
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="CONTACT US.php">About Company</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="office-projects.php">Projects</a></li>
+        <li><a href="CONTACT US.php">Contact Us</a></li>
       </ul>
     </div>
 
@@ -147,11 +133,11 @@ body {
     <div>
       <h3>What We Do</h3>
       <ul>
-        <li><a href="#">Design & Build</a></li>
-        <li><a href="#">General Contracting</a></li>
-        <li><a href="#">Refurbishment</a></li>
-        <li><a href="#">Retail & Office Fitouts</a></li>
-        <li><a href="#">Industrial Spaces</a></li>
+        <li><a href="services.html">Design & Build</a></li>
+        <li><a href="services.html">General Contracting</a></li>
+        <li><a href="services.html">Refurbishment</a></li>
+        <li><a href="services.html">Retail & Office Fitouts</a></li>
+        <li><a href="industrial-fitouts.html">Industrial Spaces</a></li>
       </ul>
     </div>
 
@@ -164,9 +150,9 @@ body {
         <li><i>✉️</i> info@shreespaacesolution.com</li>
         <br>
 
-        <li><a class="sss-footer-link" href="#">Vendor Registration →</a></li>
-        <li><a class="sss-footer-link" href="#">Careers →</a></li>
-        <li><a class="sss-footer-link" href="#">Material Supplier • Vendor Registration →</a></li>
+        <li><a class="sss-footer-link" href="vendor-form.html">Vendor Registration →</a></li>
+        <li><a class="sss-footer-link" href="Careers at Shree Spaace Solution.html">Careers →</a></li>
+        <li><a class="sss-footer-link" href="Material Supplier • Vendor Registration Form.html">Material Supplier • Vendor Registration →</a></li>
       </ul>
     </div>
 
@@ -177,6 +163,3 @@ body {
   </div>
 
 </footer>
-
-</body>
-</html>

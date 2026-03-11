@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
 <meta charset="UTF-8">
 <title>Responsive Navbar • Shree Spaace Solution</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -132,17 +129,13 @@
   }
 }
 </style>
-</head>
-
-<body>
-
 <header class="sss-navbar">
 
   <!-- LEFT MENU -->
   <div class="nav-left">
-    <a href="#">HOME</a>
-    <a href="#">ABOUT US</a>
-    <a href="#">SERVICES</a>
+    <a href="Index.html">HOME</a>
+    <a href="CONTACT US.html">ABOUT US</a>
+    <a href="services.html">SERVICES</a>
   </div>
 
   <!-- LOGO CENTER -->
@@ -154,8 +147,8 @@
   <!-- RIGHT MENU -->
   <div class="nav-right">
     <a href="#">PROCESS</a>
-    <a href="#">PROJECTS</a>
-    <a href="#">CONTACT US</a>
+    <a href="office-projects.php">PROJECTS</a>
+    <a href="CONTACT US.php">CONTACT US</a>
 
     <div class="nav-social">
       <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -173,12 +166,12 @@
 
 <!-- MOBILE MENU DROPDOWN -->
 <div id="mobileMenu" class="mobile-menu">
-  <a href="#">HOME</a>
-  <a href="#">ABOUT US</a>
-  <a href="#">SERVICES</a>
+  <a href="Index.html">HOME</a>
+  <a href="CONTACT US.html">ABOUT US</a>
+  <a href="services.html">SERVICES</a>
   <a href="#">PROCESS</a>
-  <a href="#">PROJECTS</a>
-  <a href="#">CONTACT US</a>
+  <a href="office-projects.php">PROJECTS</a>
+  <a href="CONTACT US.php">CONTACT US</a>
 
   <div style="display:flex; gap:15px; margin-top:10px;">
     <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -193,6 +186,3 @@ function toggleMenu() {
   menu.style.display = menu.style.display === "flex" ? "none" : "flex";
 }
 </script>
-
-</body>
-</html>

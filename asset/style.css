@@ -170,6 +170,13 @@ body {
 .stat-item h3 { font-size: 1.5rem; font-weight: 700; color: #000; margin: 0; } /* Increased from 1.4rem */
 .stat-item p { font-size: 1.1rem; color: #444; } /* Increased from 1rem */
 
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* ABOUT SECTION */
 @keyframes floaty {
   0%,100% { transform: translateY(0); }
@@ -433,8 +440,16 @@ h2.title::after{
     display: flex;
     justify-content: center;
     gap: 90px;
-    padding: 0 50px;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .flow {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 0 20px;
+    }
 }
 
 .step {

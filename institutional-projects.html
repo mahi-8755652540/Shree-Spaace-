@@ -280,56 +280,183 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section class="section">
-    <div class="container">
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Institutional Projects | Shree Spaace Solution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <div class="projects-grid">
+  <style>
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:#f3f6fb;
+      color:#1f2937;
+    }
 
-        <div class="project-card" onclick="openPopup('asset/institutional project/reception Aakash Insititutional Project Mayapuri interior for Shree Spaace Solution.png')">
-          <div class="project-img"><img src="asset/institutional project/reception Aakash Insititutional Project Mayapuri interior for Shree Spaace Solution.png"></div>
-          <div class="project-body"><p>Modern reception & counselling area.</p></div>
-        </div>
+    /* ===== PROJECT GRID ===== */
+    .institutional-projects{
+      padding:60px 20px;
+    }
 
-        <div class="project-card" onclick="openPopup('asset/institutional project/Waiting Area Shree Spaace Solution Insitittional Interior.png')">
-          <div class="project-img"><img src="asset/institutional project/Waiting Area Shree Spaace Solution Insitittional Interior.png"></div>
-          <div class="project-body"><p>Training classroom with acoustic walls.</p></div>
-        </div>
+    .projects-grid{
+      max-width:1200px;
+      margin:auto;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:26px;
+    }
 
-        <div class="project-card" onclick="openPopup('images/inst3.jpg')">
-          <div class="project-img"><img src="images/inst3.jpg"></div>
-          <div class="project-body"><p>Library with warm lighting & study pods.</p></div>
-        </div>
+    .project-card{
+      background:#fff;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 14px 32px rgba(0,0,0,.12);
+      cursor:pointer;
+      transition:0.3s ease;
+    }
 
-        <div class="project-card" onclick="openPopup('asset/institutional project/shree spaace solution Institutional interior best in Lucknow.NEF')">
-          <div class="project-img"><img src="asset/institutional project/"></div>
-          <div class="project-body"><p>Computer lab with secure wiring.</p></div>
-        </div>
+    .project-card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 22px 44px rgba(0,0,0,.22);
+    }
 
-        <div class="project-card" onclick="openPopup('images/inst5.jpg')">
-          <div class="project-img"><img src="images/inst5.jpg"></div>
-          <div class="project-body"><p>Principal cabin with corporate theme.</p></div>
-        </div>
+    .project-card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+    }
 
-        <div class="project-card" onclick="openPopup('images/inst6.jpg')">
-          <div class="project-img"><img src="images/inst6.jpg"></div>
-          <div class="project-body"><p>Conference room for presentations.</p></div>
-        </div>
+    .project-card p{
+      padding:14px 16px 18px;
+      margin:0;
+      font-size:15px;
+      font-weight:500;
+    }
 
-        <div class="project-card" onclick="openPopup('images/inst7.jpg')">
-          <div class="project-img"><img src="images/inst7.jpg"></div>
-          <div class="project-body"><p>Student lounge with notice boards.</p></div>
-        </div>
+    /* ===== POPUP ===== */
+    .popup{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,.85);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index:9999;
+    }
 
-        <div class="project-card" onclick="openPopup('images/inst8.jpg')">
-          <div class="project-img"><img src="images/inst8.jpg"></div>
-          <div class="project-body"><p>Admin workspace with organised storage.</p></div>
-        </div>
+    .popup.active{
+      display:flex;
+    }
 
-        <div class="project-card" onclick="openPopup('images/inst9.jpg')">
-          <div class="project-img"><img src="images/inst9.jpg"></div>
-          <div class="project-body"><p>Multipurpose hall with durable flooring.</p></div>
-        </div>
+    .popup img{
+      max-width:90%;
+      max-height:90%;
+      border-radius:14px;
+      box-shadow:0 20px 60px rgba(0,0,0,.6);
+    }
+
+    .popup-close{
+      position:absolute;
+      top:20px;
+      right:26px;
+      font-size:34px;
+      color:#fff;
+      cursor:pointer;
+      user-select:none;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width:992px){
+      .projects-grid{ grid-template-columns:repeat(2,1fr); }
+    }
+    @media(max-width:600px){
+      .projects-grid{ grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<section class="institutional-projects">
+  <div class="projects-grid">
+
+    <div class="project-card" onclick="openPopup(this)">
+      <img src="asset/institutional project/Aakash Institution  Mayapuri Shree Spaace Solution  Interior Company.png">
+      
+    </div>
+
+    <div class="project-card" onclick="openPopup(this)">
+      <img src="asset/institutional project/3.png">
+      
+    </div>
+
+    <div class="project-card" onclick="openPopup(this)">
+      <img src="asset/institutional project/9.png">
+      
+    </div>
+
+    <div class="project-card" onclick="openPopup(this)">
+      <img src="asset/institutional project/Aakash Mayapuri.png">
+      
+    </div>
+
+    <div class="project-card" onclick="openPopup(this)">
+      <img src="asset/institutional project/Waiting Area Shree Spaace Solution Insitittional Interior.png">
+      
+    </div>
+
+    <div class="project-card" onclick="openPopup(this)">
+      <img src="asset/institutional project/imgi_51_Aakash-768x549.jpg">
+      
+    </div>
+
+    <div class="project-card" onclick="openPopup(this)">
+      <img src="asset/institutional project/imgi_5_WhatsApp-Image-2022-10-19-at-15.55.44.jpg">
+     
+    </div>
+
+    <div class="project-card" onclick="openPopup(this)">
+      <img src="asset/institutional project/reception Aakash Insititutional Project Mayapuri interior for Shree Spaace Solution.png">
+      
+    </div>
+
+    <div class="project-card" onclick="openPopup(this)">
+      <img src="asset/institutional project/caffee area shree spaace solution ncr gurgaon.png">
+      
+    </div>
+
+  </div>
+</section>
+
+<!-- POPUP -->
+<div class="popup" id="popup" onclick="closePopup()">
+  <span class="popup-close">×</span>
+  <img id="popupImg" onclick="event.stopPropagation()">
+</div>
+
+<script>
+  function openPopup(card){
+    const img = card.querySelector("img");
+    document.getElementById("popupImg").src = img.src;
+    document.getElementById("popup").classList.add("active");
+  }
+
+  function closePopup(){
+    document.getElementById("popup").classList.remove("active");
+  }
+
+  // ESC key support
+  document.addEventListener("keydown", e => {
+    if(e.key === "Escape") closePopup();
+  });
+</script>
+
+</body>
+</html>
+
 
       </div>
 
@@ -469,13 +596,14 @@ body {
 
     <!-- QUICK LINKS -->
     <div>
-      <h3>Quick Links</h3>
+     <h3>Quick Links</h3>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Company</a></li>
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="Index.html#home" style="color:var(--white)">Home</a></li>
+        <li><a href="Index.html#about" style="color:var(--white)">About Company</a></li>
+        <li><a href="Index.html#service" style="color:var(--white)">Services</a></li>
+        
+        <li><a href="Index.html#process" style="color:var(--white)">Projects</a></li>
+        <li><a href="Index.html#contact" style="color:var(--white)">Contact Us</a></li>
       </ul>
     </div>
 
@@ -483,11 +611,13 @@ body {
     <div>
       <h3>What We Do</h3>
       <ul>
-        <li><a href="#">Design & Build</a></li>
-        <li><a href="#">General Contracting</a></li>
-        <li><a href="#">Refurbishment</a></li>
-        <li><a href="#">Retail & Office Fitouts</a></li>
-        <li><a href="#">Industrial Spaces</a></li>
+        <li><a href="institutional-projects.html" style="color:var(--white)">Institutional Projects </a></li>
+        <li><a href="office-projects.html" style="color:var(--white)">Office Projects</a></li>
+        <li><a href="hospitality-projects.html" style="color:var(--white)">Hospitality Projects</a></li>
+        <li><a href="industrial-projects.html" style="color:var(--white)">Industrial Projects</a></li>
+        <li><a href="other-projects.html" style="color:var(--white)">Other Projects</a></li>
+        <li><a href="retail-projects.html" style="color:var(--white)">Retail Projects</a></li>
+       
       </ul>
     </div>
 
@@ -495,14 +625,12 @@ body {
     <div>
       <h3>Contact</h3>
       <ul>
-        <li><i>📍</i> Gurgaon, Haryana</li>
-        <li><i>📞</i> +91-9871548224</li>
-        <li><i>✉️</i> info@shreespaacesolution.com</li>
-        <br>
-
-        <li><a class="sss-footer-link" href="#">Vendor Registration →</a></li>
-        <li><a class="sss-footer-link" href="#">Careers →</a></li>
-        <li><a class="sss-footer-link" href="#">Material Supplier • Vendor Registration →</a></li>
+        <li>📍 Gurgaon, Haryana</li>
+        <li>📞 +91-9871548224</li>
+        <li>✉️ info@shreespaacesolution.com</li>
+        <li><a href="vendor-form.html" style="color:var(--gold)">Vendor Registration →</a></li> 
+        <li><a href="Careers at Shree Spaace Solution.html" style="color:var(--gold)">Careers →</a></li>
+        <li><a href="Material Supplier • Vendor Registration Form.html" style="color:var(--gold)">Material Supplier • Vendor Registration Form  →</a></li>
       </ul>
     </div>
 
